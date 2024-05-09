@@ -1,3 +1,6 @@
+// Importerar variabler.
+@import 'variables';
+
 // Normalisering.
 * {
     margin: 0;
@@ -11,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Calibri', sans serif;
-    background-color: rgb(220, 27, 165, 0.05);
+    background-color: $white;
 
     // Rubrik.
     h1 {
@@ -22,15 +25,12 @@ body {
     // Brödtext.
     p {
         margin: 1rem;
-        text-align: left;
     }
 }
 
 // Mediaquery för skärmstorlek 769px och uppåt.
 @media screen and (min-width: 769px) {
-    body p {
-        margin-left: 5rem;
-    }
+    
 }
 
 // Mediaquery för skärmstorlek 1441px och uppåt.

@@ -1,0 +1,31 @@
+// Importerar variabler.
+@import '../../variables';
+
+.container {
+    max-width: 60ch;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+    img {
+        display: flex;
+        align-self: center;
+        width: 200px;
+        height: 100%;
+        border: 5px solid rgba($color-purple, 0.5);
+        border-radius: 10px;
+        margin: 3rem auto 2rem auto;
+    }
+
+    p {
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+// Mediaquery för skärmstorlek 769px och uppåt.
+@media screen and (min-width: 769px) {
+    .images {
+        display: flex;
+        justify-content: center;
+    }
+}
