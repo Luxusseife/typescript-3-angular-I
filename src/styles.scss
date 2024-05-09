@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+// Normalisering.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Body.
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Calibri', sans serif;
+    background-color: rgb(220, 27, 165, 0.05);
+
+    // Rubrik.
+    h1 {
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+    
+    // Brödtext.
+    p {
+        margin: 1rem;
+        text-align: left;
+    }
+}
+
+// Mediaquery för skärmstorlek 769px och uppåt.
+@media screen and (min-width: 769px) {
+    body p {
+        margin-left: 5rem;
+    }
+}
+
+// Mediaquery för skärmstorlek 1441px och uppåt.
+@media (min-width: 1441px) {
+    body p {
+        font-size: large;
+    }
+}

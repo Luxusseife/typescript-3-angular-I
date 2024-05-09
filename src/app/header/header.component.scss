@@ -1,0 +1,98 @@
+// Header.
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #d30586;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 3rem;
+  height: 7.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+  animation: changeColor 9s linear infinite;
+
+  // Navigeringsmeny.
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  // Li-element i nav.
+  nav ul li {
+    display: inline;
+    font-size: 18px;
+  }
+
+  // Länkar i nav.
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    text-shadow: 1px 1px 3px #000000;
+  }
+
+  // Hover-effekt för länkar.
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  // Aktiv sida.
+  .currentPage {
+    font-size: 24px;
+    border: 1px solid rgb(255, 255, 255, 0.75);
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+  }
+}
+
+// Mediaquery för skärmstorlek 769px och uppåt.
+@media screen and (min-width: 769px) {
+  
+  header {
+
+    nav ul li {
+      display: inline;
+      font-size: 22px;
+    }
+
+    nav ul li a {
+      padding: 1rem;
+    }
+  }
+}
+
+// Mediaquery för skärmstorlek 1441px och uppåt.
+@media (min-width: 1441px) {
+  
+  header {
+
+    nav ul li {
+      display: inline;
+      font-size: 24px;
+    }
+
+    nav ul li a {
+      padding: 1rem;
+    }
+  }
+}
+
+// Keyframes för headerns färgskiftning.
+@keyframes changeColor {
+  0% {
+    background-color: rgb(173, 38, 250, 0.5);
+  }
+
+  33% {
+    background-color: rgb(248, 47, 188, 0.5);
+  }
+
+  66% {
+    background-color: rgb(247, 3, 72, 0.5);
+  }
+
+  100% {
+    background-color: rgb(173, 38, 250, 0.5);
+  }
+}
