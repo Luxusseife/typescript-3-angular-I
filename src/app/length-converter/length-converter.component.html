@@ -1,0 +1,13 @@
+<h2>Måttenheter</h2>
+
+<div class="length">
+    <label for="m">Meter: </label>
+    <input type="number" id="m" [(ngModel)]="m" (ngModelChange)="convertMeterToFeet()">
+
+    <p>{{ m }} meter är {{ resultInFt }} feet.</p>
+
+    <label for="ft">Feet: </label>
+    <input type="number" id="ft" [(ngModel)]="ft" (ngModelChange)="convertFeetToMeter()">
+
+    <p>{{ ft }} feet är {{ resultInM }} meter.</p>
+</div>
