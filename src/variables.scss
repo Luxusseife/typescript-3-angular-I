@@ -5,3 +5,29 @@ $color-red: #f70348;
 
 $white: #ffffff;
 $black: #000000;
+
+// Font.
+$font-stack: "calibri", sans serif;
+
+// Mixin för konverterings-container.
+@mixin convert-container {
+    background-color: lighten($color-purple, 40%);
+    margin: 1rem auto;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 5px solid lighten($color-purple, 30%);
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;
+    max-width: 400px;
+
+    // Input-fält.
+    input {
+        border: 2px solid lighten($color-purple, 30%);
+        padding-left: 0.25rem;
+    }
+
+    // Brödtext.
+    p {
+        margin: 1rem 1rem 0.5rem 0;
+    }
+}

@@ -1,10 +1,14 @@
-.temp {
-    background-color: pink;
-    margin: 2rem;
-    padding: 1rem;
-    border: 5px solid black;
+// Importerar variabler.
+@import '../../variables';
+
+// Container för allt innehåll.
+.container {
+    padding-bottom: 110px;
+    margin: auto 1rem;
 }
 
-.padding {
-    padding-bottom: 80px;
+// Container för temperaturkonvertering.
+.temp-c,
+.temp-f {
+    @include convert-container;
 }

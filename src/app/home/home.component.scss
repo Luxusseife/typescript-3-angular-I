@@ -1,23 +1,26 @@
 // Importerar variabler.
 @import '../../variables';
 
+// Container för informationstext och bilder.
 .container {
     max-width: 60ch;
     margin: 0 auto;
+    text-align: center;
     padding-bottom: 80px;
 
+    // Bilder.
     img {
         display: flex;
         align-self: center;
         width: 200px;
         height: 100%;
-        border: 5px solid rgba($color-purple, 0.5);
+        border: 5px solid lighten($color-purple, 30%);
         border-radius: 10px;
         margin: 3rem auto 2rem auto;
     }
 
+    // Brödtext.
     p {
-        text-align: center;
         margin: 0 2rem 0 2rem;
     }
 }

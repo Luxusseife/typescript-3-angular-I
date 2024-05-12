@@ -1,15 +1,18 @@
 <h2>Temperaturenheter</h2>
 
-<div class="padding">
-<div class="temp">
-    <label for="c">Celsius: </label>
-    <input type="number" id="c" [(ngModel)]="c" (ngModelChange)="convertCelsiusToFahrenheit()">
+<div class="container">
+    <div class="temp-c">
+        <label for="c">Celsius: </label>
+        <br>
+        <input type="number" id="c" [(ngModel)]="c" (ngModelChange)="convertCelsiusToFahrenheit()">
 
-    <p>{{ c }} &#8451; är {{ resultInF }} &#8457;.</p>
+        <p id="result">{{ c }} °C är {{ resultInF }} °F.</p>
+    </div>
+    <div class="temp-f">
+        <label for="f">Fahrenheit: </label>
+        <br>
+        <input type="number" id="f" [(ngModel)]="f" (ngModelChange)="convertFahrenheitToCelsius()">
 
-    <label for="f">Fahrenheit: </label>
-    <input type="number" id="f" [(ngModel)]="f" (ngModelChange)="convertFahrenheitToCelsius()">
-
-    <p>{{ f }} &#8457; är {{ resultInC }} &#8451;.</p>
-</div>
+        <p>{{ f }} °F är {{ resultInC }} °C.</p>
+    </div>
 </div>

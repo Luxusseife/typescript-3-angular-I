@@ -1,6 +1,12 @@
-.length {
-    background-color: pink;
-    margin: 2rem;
-    padding: 1rem;
-    border: 5px solid black;
+// Importerar variabler.
+@import '../../variables';
+
+// Container för allt innehåll.
+.container {
+    margin: auto 1rem;
+}
+
+// Container för längdkonvertering.
+.length-m, .length-ft {
+    @include convert-container;
 }
