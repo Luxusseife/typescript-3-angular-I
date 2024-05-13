@@ -2,7 +2,7 @@
 
  base = "/"
  command = "ng build"
- puplish = "dist/jeli2308-angularI/browser
+ publish = "dist/jeli2308-angular-i/browser
 
  [[redirects]]
  from = "/*"
