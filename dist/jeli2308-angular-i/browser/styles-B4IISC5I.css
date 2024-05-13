@@ -1,0 +1,1 @@
+*{margin:0;padding:0;box-sizing:border-box}body{min-height:100vh;display:flex;flex-direction:column;font-family:"Calibri",sans serif;background-color:#dc1ba50d}body h1{text-align:center;margin:2rem 0}body p{margin:1rem;text-align:left}@media screen and (min-width: 769px){body p{margin-left:5rem}}@media (min-width: 1441px){body p{font-size:large}}
