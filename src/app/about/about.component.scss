@@ -1,0 +1,14 @@
+// Container för informationstext.
+.container {
+    max-width: 65ch;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+
+    // Brödtext.
+    p {
+        margin: 0 2rem 0 2rem;
+        text-align: left;
+        line-height: 1.6;
+    }
+}

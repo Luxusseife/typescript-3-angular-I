@@ -14,20 +14,28 @@ $font-stack: "calibri", sans serif;
     background-color: lighten($color-purple, 40%);
     margin: 1rem auto;
     padding: 1rem 1rem 1rem 3rem;
-    border: 5px solid lighten($color-purple, 30%);
+    border: 5px solid lighten($color-purple, 20%);
     border-radius: 10px;
     text-align: left;
     font-weight: bold;
     max-width: 400px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
 
     // Input-fält.
     input {
-        border: 2px solid lighten($color-purple, 30%);
+        border: 2px solid lighten($color-purple, 20%);
         padding-left: 0.25rem;
     }
 
     // Brödtext.
     p {
         margin: 1rem 1rem 0.5rem 0;
+    }
+
+    // Mediaquery för skärmstorlek 1441px och uppåt.
+    @media (min-width: 1441px) {
+        label {
+            font-size: 22px;
+        }
     }
 }

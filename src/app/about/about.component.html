@@ -1,3 +1,42 @@
 <h1>Om sidan</h1>
 
-<p>Här är en sammanfattning av arbetet med denna sida och slutsatser efter detta arbete.</p>
+<div class="container">
+
+    <p>
+        Syftet med momentet är att få en grundläggande förståelse för Angular och dess användning som ett ramverk för att skapa 
+        dynamiska och responsiva webbapplikationer. Det är även att förstå hur en Angular-applikation konstrueras och hur dess 
+        olika bitar interagerar med varandra samt att kunna använda CLI-verktyg för att testköra samt publicera optimerade filer.
+    </p>
+    
+    <h2>Konstruktion</h2> 
+
+    <p>
+        Webbplatsen innehar tre undersidor; en startsida med kort information om momentet, en sida för enhetskonvertering och 
+        en om-sida med konstruktion av och slutsatser om momentet. Alla undersidor är en egen komponent och även header och 
+        footer är en egen komponent. Konverteringskomponenterna är två stycken och är infogade på undersidan <b>Konvertera</b>. 
+        I konverteringskomponenterna är <i>FormsModule</i> importerat och <i>ngModel</i>, <i>ngModelChange</i> och 
+        <i>databinding</i> används för att hämta och skriva ut data. Komponenten <b>not-found</b> är även skapad för att dirigera 
+        och meddela användaren om att en felaktig sökväg angetts. Totalt utgör åtta komponenter hela webbplatsen. 
+        <br>
+        <br>
+        Navigeringsmenyn är en oordnad lista med länkar skapad i headerkomponenten. Modulerna <i>routerLink</i> och 
+        <i>routerLinkActive</i> är importerade för att navigeringen ska fungera och inte medföra sidladdning. Webbplatsen är 
+        stylad med SCSS, en del globalt som normalisering, regler för body och rubriker samt mediaqueries för body. Resterande 
+        styling är gjord för och i respektive komponents SCSS-fil. Deklarerade variabler, font och mixins ligger i en global 
+        variables.scss-fil och importeras via <i>&#64;use</i> på aktuella sidor. 
+    </p>
+
+    <h2>Mina slutsatser</h2>
+
+    <p>
+        Att arbeta med Angular som ramverk är ett nytt och annorlunda sätt att arbeta med webbutveckling. Jag har sedan 
+        tidigare testat på ramverket Bootstrap men detta är första gången med Angular och TypeScript som jag 
+        känner är kämpigt att få ett helhetsgrepp om. Det har varit utmananade på så sätt att det har varit krångligt att 
+        förstå hur allt kopplas ihop vad gäller routes och imports, både teoretiskt och praktiskt. 
+        <br>
+        <br>
+        När det väl fungerat så har det i slutändan behövts väldigt lite TypeScript-kod och det har varit otroligt behändigt 
+        och bra att ha webbplatsens olika delar uppdelade i komponenter, särskilt gällande felsökning för innehåll och styling. 
+        Jag ser fram emot att använda Angular och alla positiva fördelar med att använda ramverk för kommande uppgifter och projekt. 
+    </p>
+</div>

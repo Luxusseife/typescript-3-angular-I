@@ -3,10 +3,10 @@
 
 // Container för informationstext och bilder.
 .container {
-    max-width: 60ch;
+    max-width: 65ch;
     margin: 0 auto;
-    text-align: center;
-    padding-bottom: 80px;
+    text-align: left;
+    padding-bottom: 100px;
 
     // Bilder.
     img {
@@ -14,14 +14,16 @@
         align-self: center;
         width: 200px;
         height: 100%;
-        border: 5px solid lighten($color-purple, 30%);
+        border: 5px solid lighten($color-purple, 20%);
         border-radius: 10px;
         margin: 3rem auto 2rem auto;
+        box-shadow: 0 0 10px 3px rgba($black, 0.2);
     }
 
     // Brödtext.
     p {
         margin: 0 2rem 0 2rem;
+        line-height: 1.6;
     }
 }
 

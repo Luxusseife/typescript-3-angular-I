@@ -10,11 +10,13 @@ Den här README-filen har skapats för att beskriva momentets syfte och hur lös
 
 ## Konstruktion
 
-Webbplatsen innehar tre undersidor; en startsida med kort information om momentet, en sida för enhetskonvertering och en om-sida med konstruktion av och slutsatser om momentet. Alla undersidor är en egen komponent. Utöver dessa är även komponenten **not-found** skapad för att dirigera och meddela användaren om att en felaktig sökväg angetts. Navigeringsmenyn är en oordnad lista med länkar skapad i headerkomponenten. Modulerna _routerLink_ och _routerLinkActive_ är importerade för att navigeringen ska fungera och inte medföra sidladdning. Webbplatsen är stylad med SCSS, en del globalt som normalisering, regler för body och rubriker samt mediaqueries för body. Resterande styling är gjord för och i respektive komponents SCSS-fil.
+Webbplatsen innehar tre undersidor; en startsida med kort information om momentet, en sida för enhetskonvertering och en om-sida med konstruktion av och slutsatser om momentet. Alla undersidor är en egen komponent och även header och footer är en egen komponent. Konverteringskomponenterna är två stycken och är infogade på undersidan **Konvertera**. I konverteringskomponenterna är _FormsModule_ importerat och _ngModel_, _ngModelChange_ och _databinding_ används för att hämta och skriva ut data. Komponenten **not-found** är även skapad för att dirigera och meddela användaren om att en felaktig sökväg angetts. Totalt utgör åtta komponenter hela webbplatsen. 
 
-- På startsidan hittas två bilder som är implementerade med HTML src-taggar.
-- På konverteringssidan...
-- På om-sidan...
+Navigeringsmenyn är en oordnad lista med länkar skapad i headerkomponenten. Modulerna _routerLink_ och _routerLinkActive_ är importerade för att navigeringen ska fungera och inte medföra sidladdning. Webbplatsen är stylad med SCSS, en del globalt som normalisering, regler för body och rubriker samt mediaqueries för body. Resterande styling är gjord för och i respektive komponents SCSS-fil. Deklarerade variabler, font och mixins ligger i en global variables.scss-fil och importeras via _@use_ på aktuella sidor. 
+
+- På startsidan hittas kort information om momentet och två bilder som är implementerade med HTML src-taggar.
+- På konverteringssidan finns kort information om den konvertering som kan göras och två komponenter är infogade som sköter konvertering av mått och temperatur. 
+- På om-sidan kan man läsa om webbplatsens konstruktion (en del av denna README-fil) och mina slutsatser av momentet.
 
 ## Utveckling
 Nedan följer en instruktion (på engelska) för hur skapandet och utvecklingen av ett Angular-projekt kan göras. Det förutsätter att Angular är installerat på datorn med det globala kommandot _npm install -g @angular/cli_. 

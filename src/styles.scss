@@ -14,7 +14,11 @@ body {
     display: flex;
     flex-direction: column;
     font: 100% $font-stack;
-    background-color: $white;
+    background-image: url("assets/images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 
     // Rubriker.
     h1 {
@@ -28,14 +32,9 @@ body {
     }
 }
 
-// Mediaquery för skärmstorlek 769px och uppåt.
-@media screen and (min-width: 769px) {
-    
-}
-
 // Mediaquery för skärmstorlek 1441px och uppåt.
 @media (min-width: 1441px) {
     body p {
-        font-size: large;
+        font-size: 22px;
     }
 }
